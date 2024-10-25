@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Preview - Astro3 Theatre</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .movie-card {
+            transition: transform 0.2s;
+        }
+        .movie-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Page Header -->
+        <h1 class="text-3xl font-bold mb-8">Now Playing & Coming Soon</h1>
+
+        <!-- Now Playing Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-6">Now Playing</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Smile 2 -->
+                <div class="movie-card bg-white rounded-lg overflow-hidden shadow">
+                    <img src="images/Smile ST00001490.jpg" alt="Smile 2" class="w-full aspect-[2/3] object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Smile 2</h3>
+                        <span class="inline-block bg-red-600 text-white text-sm px-2 py-1 rounded mt-1">R</span>
+                        <div class="text-green-600 text-sm mt-2">Tickets Available</div>
+                    </div>
+                </div>
+
+                <!-- Wild Robot -->
+                <div class="movie-card bg-white rounded-lg overflow-hidden shadow">
+                    <img src="images/Wild Robot ST00001464.jpg" alt="The Wild Robot" class="w-full aspect-[2/3] object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">The Wild Robot</h3>
+                        <span class="inline-block bg-blue-600 text-white text-sm px-2 py-1 rounded mt-1">PG</span>
+                        <div class="text-green-600 text-sm mt-2">Tickets Available</div>
+                    </div>
+                </div>
+
+                <!-- Venom -->
+                <div class="movie-card bg-white rounded-lg overflow-hidden shadow">
+                    <img src="images/Venom ST00001488.jpg" alt="Venom: The Last Dance" class="w-full aspect-[2/3] object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Venom: The Last Dance</h3>
+                        <span class="inline-block bg-yellow-600 text-white text-sm px-2 py-1 rounded mt-1">PG-13</span>
+                        <div class="text-green-600 text-sm mt-2">Tickets Available</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coming Soon Section -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-6">Coming Soon</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Bonhoeffer -->
+                <div class="movie-card bg-white rounded-lg overflow-hidden shadow">
+                    <img src="images/Bonhoeffer ST00001468.jpg" alt="Bonhoeffer" class="w-full aspect-[2/3] object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Bonhoeffer</h3>
+                        <span class="inline-block bg-yellow-600 text-white text-sm px-2 py-1 rounded mt-1">PG-13</span>
+                        <div class="text-gray-600 text-sm mt-2">Opens November 22</div>
+                    </div>
+                </div>
+
+                <!-- Wicked -->
+                <div class="movie-card bg-white rounded-lg overflow-hidden shadow">
+                    <img src="images/Wicked ST00001482.jpg" alt="Wicked" class="w-full aspect-[2/3] object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Wicked</h3>
+                        <span class="inline-block bg-blue-600 text-white text-sm px-2 py-1 rounded mt-1">PG</span>
+                        <div class="text-gray-600 text-sm mt-2">Coming Soon</div>
+                    </div>
+                </div>
+
+                <!-- Best Christmas Pageant Ever -->
+                <div class="movie-card bg-white rounded-lg overflow-hidden shadow">
+                    <img src="images/Best Christmas Pageant Ever ST00001486.jpg" alt="The Best Christmas Pageant Ever" class="w-full aspect-[2/3] object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">The Best Christmas Pageant Ever</h3>
+                        <span class="inline-block bg-blue-600 text-white text-sm px-2 py-1 rounded mt-1">PG</span>
+                        <div class="text-gray-600 text-sm mt-2">Opens November 8</div>
+                    </div>
+                </div>
+
+                <!-- Red One -->
+                <div class="movie-card bg-white rounded-lg overflow-hidden shadow">
+                    <img src="images/Red One ST00001484.jpg" alt="Red One" class="w-full aspect-[2/3] object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Red One</h3>
+                        <span class="inline-block bg-yellow-600 text-white text-sm px-2 py-1 rounded mt-1">PG-13</span>
+                        <div class="text-gray-600 text-sm mt-2">Opens November 15</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

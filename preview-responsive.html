@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Preview - Astro3 Theatre</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .movie-card {
+            transition: transform 0.2s;
+        }
+        .movie-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .movie-poster {
+            aspect-ratio: 2/3;
+            object-fit: cover;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-2xl md:text-3xl font-bold mb-8">Now Playing & Coming Soon</h1>
+
+        <!-- Now Playing Section -->
+        <section class="mb-12">
+            <h2 class="text-xl md:text-2xl font-semibold mb-6 bg-gray-800 text-white py-2 px-4 rounded">Now Playing</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Smile 2 -->
+                <div class="movie-card bg-white rounded-lg overflow-hidden shadow">
+                    <img src="images/Smile ST00001490.jpg" alt="Smile 2" class="movie-poster">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-bold text-lg">Smile 2</h3>
+                            <span class="bg-red-600 text-white text-sm px-2 py-1 rounded">R</span>
+                        </div>
+                        <div class="mt-2 flex justify-between items-center">
+                            <span class="text-blue-600 text-sm">Now Playing</span>
+                            <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded hover:bg-blue-700">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wild Robot -->
+                <div class="movie-card bg-white rounded-lg overflow-hidden shadow">
+                    <img src="images/Wild Robot ST00001464.jpg" alt="The Wild Robot" class="movie-poster">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-bold text-lg">The Wild Robot</h3>
+                            <span class="bg-green-600 text-white text-sm px-2 py-1 rounded">PG</span>
+                        </div>
+                        <div class="mt-2 flex justify-between items-center">
+                            <span class="text-blue-600 text-sm">Now Playing</span>
+                            <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded hover:bg-blue-700">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Venom -->
+                <div class="movie-card bg-white rounded-lg overflow-hidden shadow">
+                    <img src="images/Venom ST00001488.jpg" alt="Venom: The Last Dance" class="movie-poster">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-bold text-lg">Venom: The Last Dance</h3>
+                            <span class="bg-yellow-600 text-white text-sm px-2 py-1 rounded">PG-13</span>
+                        </div>
+                        <div class="mt-2 flex justify-between items-center">
+                            <span class="text-blue-600 text-sm">Now Playing</span>
+                            <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded hover:bg-blue-700">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coming Soon Section -->
+        <section>
+            <h2 class="text-xl md:text-2xl font-semibold mb-6 bg-gray-800 text-white py-2 px-4 rounded">Coming Soon</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Bonhoeffer -->
+                <div class="movie-card bg-white rounded-lg overflow-hidden shadow">
+                    <img src="images/Bonhoeffer ST00001468.jpg" alt="Bonhoeffer" class="movie-poster">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-bold text-lg">Bonhoeffer</h3>
+                            <span class="bg-yellow-600 text-white text-sm px-2 py-1 rounded">PG-13</span>
+                        </div>
+                        <div class="mt-2">
+                            <span class="text-gray-600 text-sm">Opens November 22</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wicked -->
+                <div class="movie-card bg-white rounded-lg overflow-hidden shadow">
+                    <img src="images/Wicked ST00001482.jpg" alt="Wicked" class="movie-poster">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-bold text-lg">Wicked</h3>
+                            <span class="bg-green-600 text-white text-sm px-2 py-1 rounded">PG</span>
+                        </div>
+                        <div class="mt-2">
+                            <span class="text-gray-600 text-sm">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Best Christmas Pageant Ever -->
+                <div class="movie-card bg-white rounded-lg overflow-hidden shadow">
+                    <img src="images/Best Christmas Pageant Ever ST00001486.jpg" alt="The Best Christmas Pageant Ever" class="movie-poster">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-bold text-lg">The Best Christmas Pageant Ever</h3>
+                            <span class="bg-green-600 text-white text-sm px-2 py-1 rounded">PG</span>
+                        </div>
+                        <div class="mt-2">
+                            <span class="text-gray-600 text-sm">Opens November 8</span>
+                            <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded hover:bg-blue-700">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Red One -->
+                <div class="movie-card bg-white rounded-lg overflow-hidden shadow">
+                    <img src="images/Red One ST00001484.jpg" alt="Red One" class="movie-poster">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-bold text-lg">Red One</h3>
+                            <span class="bg-yellow-600 text-white text-sm px-2 py-1 rounded">PG-13</span>
+                        </div>
+                        <div class="mt-2">
+                            <span class="text-gray-600 text-sm">Opens November 15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Carpenter -->
+                <div class="movie-card bg-white rounded-lg overflow-hidden shadow">
+                    <img src="images/Carpenter ST00001470.jpg" alt="Red One" class="movie-poster">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-bold text-lg">The Carpenter</h3>
+                            <span class="bg-green-600 text-white text-sm px-2 py-1 rounded">PG</span>
+                        </div>
+                        <div class="mt-2">
+                            <span class="text-gray-600 text-sm">Opens November 1</span>
+                            <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded hover:bg-blue-700">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
